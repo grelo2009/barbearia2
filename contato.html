@@ -27,10 +27,10 @@
         <input type="text" id="nomeobrenome" class="input-padrao">
 
         <label for="email">Email</label>
-        <input type="text" id="email" class="input-padrao">
+        <input type="email" id="email" class="input-padrao" placeholder="EX: LOJA@GMAIL.COM">
 
         <label for="telefone">Telefone</label>
-        <input type="text" id="telefone" class="input-padrao">
+        <input type="tel" id="telefone" class="input-padrao" placeholder="EX: (XX) XXXXX-XXXX">
 
         <label for="mensagem">Mensagem</label>
         <textarea cols="70" rows="10" id="mensagem" class="input-padrao"></textarea>
@@ -40,17 +40,18 @@
             <label for="radio-email">
                 <input type="radio" name="contato" value="email" id="radio-email">
                 Email
-
-                <label for="radio-telefone">
-                    <input type="radio" name="telefone" value="email" id="radio-telefone">
-                    Telefone
-                </label>
-
-                <label for="radio-whatsapp">
-                    <input type="radio" name="whatsapp" value="email" id="radio-whatsapp">
-                    Whatsapp
-                </label>
             </label>
+            
+            <label for="radio-telefone">
+                <input type="radio" name="telefone" value="email" id="radio-telefone">
+                Telefone
+            </label>
+
+            <label for="radio-whatsapp">
+                <input type="radio" name="whatsapp" value="email" id="radio-whatsapp" checked>
+                Whatsapp
+            </label>
+            
         </div>
         <div>
             <p>Qual horário prefere ser atendido?</p>
@@ -61,12 +62,34 @@
             </select>
         </div>
         <label class="checkbox">
-            <input type="checkbox">
+            <input type="checkbox" checked>
             Gostaria de receber nossas novidades por email?
         </label>
 
-        <input type="submit" value="Enviar formulário">
+        <input type="submit" value="Enviar formulário" class="Enviar">
        </form> 
+       <table>
+        <thead>
+            <tr>
+                <th>Dia</th>
+                <th>horário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Segunda</td>
+                <td>8h ~~ 20h</td>
+            </tr>
+            <tr>
+                <td>Quarta</td>
+                <td>8h ~~ 20h</td>
+            </tr>
+            <tr>
+                <td>Sexta</td>
+                <td>8h ~~ 20h</td>
+            </tr>
+        </tbody>
+       </table>
     </main>
     <footer>
         <img src="Barbearia V.W (Post para Facebook).png">
